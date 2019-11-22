@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>React</title>
+        <!-- React Version 16 -->
+        <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> -->
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+
+    <script src="main.js"></script>
+    <script>
+        window.data = '<%-data%>';
+        ReactDOM.render(React.createElement(FormContainer, {name: '<%-data%>'}), document.getElementById("root"));
+    </script>
+</html>
