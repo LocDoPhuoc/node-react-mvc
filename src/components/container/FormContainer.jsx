@@ -11,7 +11,8 @@ class FormContainer extends Component {
   render() {
     return (
       <div>
-        <div>Hello word</div>
+        <div>Hello {this.state.title}</div>
+        <a onClick={() => this.setState({title: 'Loc'})}>Test</a>
         <p> {window.data} </p>
         <p>This is pros: {this.props.name}</p>
         <TestComponent />
